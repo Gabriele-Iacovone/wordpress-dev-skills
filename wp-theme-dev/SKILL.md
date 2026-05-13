@@ -23,6 +23,7 @@ theme produced by this skill is accessible, secure, translatable, performant, an
    - `references/block-theme-architecture.md` — Block theme structure, theme.json, templates, patterns
    - `references/classic-theme-architecture.md` — Classic theme structure, template hierarchy, The Loop
    - `references/accessibility.md` — WCAG 2.2 AA requirements, WordPress accessibility-ready standards
+   - `references/stylesheets.md` — Management of css stylesheets
    - `references/review-requirements.md` — WordPress.org theme review checklist (14 categories)
 2. **Determine theme type** — Ask if the user wants a block theme (recommended), classic theme, or child theme
 3. **Gather requirements** — Design goals, color palette, typography, features needed
