@@ -4,6 +4,7 @@ Sources:
 - https://make.wordpress.org/themes/handbook/review/accessibility/required/
 - https://www.w3.org/WAI/WCAG21/quickref/?levels=aaa#principle1
 - https://make.wordpress.org/themes/handbook/review/required/#3-accessibility
+- https://www.w3.org/TR/WCAG22/
 
 ## Skip Links
 
@@ -168,7 +169,7 @@ add_theme_support( 'html5', array( 'navigation-widgets' ) );
 
 ## Color Contrast
 
-WCAG 2.1 Level AA minimum ratios:
+WCAG 2.2 Level AA minimum ratios:
 
 | Element Type | Minimum Ratio |
 |---|---|
