@@ -1,4 +1,4 @@
-##style.css structure:
+## style.css structure:
 - Css Reset
 - Variables (colors, spacing, radius)
 - Typography
