@@ -2,7 +2,7 @@
 name: wp-theme-dev
 description: >
   Develop WordPress themes following official WordPress coding standards, theme review requirements, accessibility
-  standards (WCAG 2.1 AA), and modern web development best practices. Use this skill whenever the user wants to create,
+  standards (WCAG 2.2 AA), and modern web development best practices. Use this skill whenever the user wants to create,
   scaffold, or develop a WordPress theme — including block (FSE) themes, classic themes, child themes, or hybrid themes.
   Also trigger when the user mentions "WordPress theme", "WP theme", "block theme", "FSE theme", "theme.json",
   "template parts", "style variations", "child theme", or wants to build a custom design/layout for WordPress.
@@ -14,7 +14,7 @@ description: >
 ## Overview
 
 Create production-ready WordPress themes that follow official WordPress coding standards, the WordPress.org theme
-review requirements, WCAG 2.1 Level AA accessibility standards, and modern web development best practices. Every
+review requirements, WCAG 2.2 Level AA accessibility standards, and modern web development best practices. Every
 theme produced by this skill is accessible, secure, translatable, performant, and ready for WordPress.org submission.
 
 ## Quick Start Workflow
@@ -22,7 +22,7 @@ theme produced by this skill is accessible, secure, translatable, performant, an
 1. **Read references** — Before writing any code, read the relevant reference files:
    - `references/block-theme-architecture.md` — Block theme structure, theme.json, templates, patterns
    - `references/classic-theme-architecture.md` — Classic theme structure, template hierarchy, The Loop
-   - `references/accessibility.md` — WCAG 2.1 AA requirements, WordPress accessibility-ready standards
+   - `references/accessibility.md` — WCAG 2.2 AA requirements, WordPress accessibility-ready standards
    - `references/review-requirements.md` — WordPress.org theme review checklist (14 categories)
 2. **Determine theme type** — Ask if the user wants a block theme (recommended), classic theme, or child theme
 3. **Gather requirements** — Design goals, color palette, typography, features needed
@@ -49,14 +49,14 @@ The `functions.php` file should ONLY contain:
 - Asset enqueueing (`wp_enqueue_scripts` hook)
 - Registering block patterns, pattern categories, and block styles
 - Registering navigation menus (classic themes)
-- Registering widget areas (classic themes)
+- Avoid registering widget areas (classic themes)
 - Loading additional PHP files from `inc/` directory
 
 **NEVER** put lengthy logic, output HTML, or complex functionality directly in functions.php.
 Split additional functionality into files in the `inc/` directory.
 
 ### 3. Accessibility — Non-Negotiable
-Every theme MUST meet WCAG 2.1 Level AA and WordPress accessibility requirements. This is not optional.
+Every theme MUST meet WCAG 2.2 Level AA and WordPress accessibility requirements. This is not optional.
 
 Read `references/accessibility.md` for complete requirements. Key mandatory items:
 
@@ -122,6 +122,9 @@ Key rules:
 - Use `loading="lazy"` on images and iframes below the fold
 - Use `font-display: swap` for custom fonts
 - Prefer system font stacks or locally hosted fonts over Google Fonts for privacy/performance
+- Create 2 css stylesheets: style.css and custom.css, load on all pages and apply the preload. 
+- In style.css put the css reset, all variables, tipography, buttons and utility classes. Read `references/stylesheets.md`.
+- In custom.css add 3 comments: Header, Footer, Media queries.
 
 ## Theme Type Reference
 
@@ -175,7 +178,7 @@ After building the theme:
 - [ ] Visible focus indicators on all focusable elements
 - [ ] Proper heading hierarchy (one H1, no skipped levels)
 - [ ] Content links are underlined
-- [ ] Color contrast meets WCAG 2.1 AA (4.5:1 text, 3:1 large text/UI)
+- [ ] Color contrast meets WCAG 2.2 AA (4.5:1 text, 3:1 large text/UI)
 - [ ] All images have appropriate alt attributes
 - [ ] ARIA landmarks are present and unique labels on duplicates
 - [ ] "Read more" links include post title (screen-reader-text)
