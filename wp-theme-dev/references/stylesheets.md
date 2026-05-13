@@ -1,4 +1,4 @@
-style.css structure:
+##style.css structure:
 - Css Reset
 - Variables (colors, spacing, radius)
 - Typography
@@ -8,7 +8,7 @@ style.css structure:
 - Layout
 - Helpers (utility classes)
 
-Example of Variables:
+#Example of Variables:
 :root{
 
   /* Colors */
@@ -68,7 +68,7 @@ Example of Variables:
 
 }
 
-Example of Typography:
+#Example of Typography:
 @font-face {
     font-family: 'Montserrat';
     src: url('/wp-content/themes/ditto-1.2/assets/fonts/Montserrat-Regular.woff2') format('woff2');
@@ -82,7 +82,7 @@ h1, .h1{
   font-size: clamp(1.5rem, 1.185rem + 3.333vw, 2.488rem);
 }
 
-Example of Links:
+#Example of Links:
 a{
   color: var(--accent);
   transition: var(--transition-fast);
@@ -111,7 +111,7 @@ a.button,
   -webkit-font-smoothing: initial;
 }
 
-Example of Inputs:
+#Example of Inputs:
 input[type="checkbox"],
 input[type="radio"]
 {
@@ -159,7 +159,7 @@ input[type="radio"]:checked:before
 {opacity: 1;}
 
 
-Example of Layout:
+#Example of Layout:
 .container,
 .row
 {
@@ -182,7 +182,7 @@ Example of Layout:
 }
 
 
-Example of Helpers:
+#Example of Helpers:
 
 /* columns */
 .col-20 {width:20%}
